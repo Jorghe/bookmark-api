@@ -1,0 +1,7 @@
+v: 0
+icon: ./icon.png
+app_name: "API Bookmark"
+micros:
+  - name: bookmark-api
+    src: ./src/
+    engine: python3.9
