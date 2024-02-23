@@ -6,7 +6,104 @@
         <meta name="author" content="Jorghe Ayala"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Crea y administra el API" />
-        <link href="./static/style.css" rel="stylesheet">
-        <title>Herramienta para favoritos</title>
+        <!-- <link href="./static/style.css" rel="stylesheet"> -->
+        <script src="./static/script.js"></script>
+        <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+        <title>Cumulus | Almacena tus favoritos en la nube</title>
     </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="{{ url_for('static', path='logo.png') }}" alt="" width="100" height="100">
+            </div>
+            <p class="title">Cumulus</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#login">Iniciar Sesión</a></li>
+                    <li><a href="#registro">Registrarse</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Almacena tus favoritos en la nube</h1>
+                <p>Accede a tus datos desde cualquier lugar.</p>
+                <a href="#registro" class="cta-button">Comienza Ahora</a>
+            </div>
+        </section>
+        <section id="hero">
+            <div class="web-flow">
+                <div class="column">
+                  <ul id="item-list">
+                    <li data-index="0">Item 1</li>
+                    <li data-index="1">Item 2</li>
+                    <li data-index="2">Item 3</li>
+                  </ul>
+                </div>
+                <div class="column" id="item-details">
+                  <h2>Detalles del ítem seleccionado</h2>
+                  <p>Nombre: <span id="item-name"></span></p>
+                  <p>Descripción: <span id="item-description"></span></p>
+                  <p>Etiquetas: <span id="item-tags"></span></p>
+                </div>
+              </div>
+<!--             <div class="sitios-container">
+                <div class="sitio-detalle">
+                    <h2>Detalles del Sitio Web</h2>
+                    <p>Descripción del sitio web de ejemplo.</p>
+                    <p>Categoría: Categoría del sitio web.</p>
+                    <p>Propietario: Propietario del sitio web.</p>
+                </div>
+                <div class="navegacion-sitios">
+                    <h2>Sitios Disponibles</h2>
+                    <ul>
+                        <li><a href="https://www.ejemplo1.com" target="_blank">Ejemplo 1</a></li>
+                        <li><a href="https://www.ejemplo2.com" target="_blank">Ejemplo 2</a></li>
+                        <li><a href="https://www.ejemplo3.com" target="_blank">Ejemplo 3</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </section>
+        <section id="caracteristicas">
+            <!-- Aquí irían las tarjetas con las características -->
+        </section>
+    
+        <section id="demostracion">
+            <!-- Aquí iría la demostración de la aplicación -->
+        </section>
+    
+        <section id="testimonios">
+            <!-- Aquí irían los testimonios de usuarios -->
+        </section>
+    
+        <section id="precios">
+            <!-- Aquí irían los planes de precios -->
+        </section>
+    
+        <section id="preguntas">
+            <!-- Aquí irían las preguntas frecuentes -->
+        </section>
+    
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="redes-sociales">
+                <!-- Iconos de redes sociales -->
+            </div>
+            <div class="contacto">
+                <p>Contacto: info@cumulus.com | Teléfono: 123-456-7890</p>
+            </div>
+        </footer>
+    </body>
 </html>
